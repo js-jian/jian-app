@@ -4,7 +4,7 @@ import { isExpanded, isHorizontal, isEventSubProcess } from "bpmn-js/lib/util/Di
 import { isAny } from "bpmn-js/lib/features/modeling/util/ModelingUtil";
 import { getChildLanes } from "bpmn-js/lib/features/modeling/util/LaneUtil";
 import { hasPrimaryModifier } from "diagram-js/lib/util/Mouse";
-
+import { Modal } from "antd";
 
 /**
  * 从bpmn-js源码复制过来 (https://github.com/bpmn-io/bpmn-js/blob/develop/lib/features/context-pad/ContextPadProvider.js)
@@ -177,7 +177,15 @@ ContextPadProvider.prototype.getContextPadEntries = function (element) {
   }
 
   function removeElement(e, element) {
-    modeling.removeElements([element]);
+    Modal.confirm({
+      title: "删除",
+      content: "确认删除当前节点?",
+      okText: "删除",
+      okType: "danger",
+      onOk: () => {
+        modeling.removeElements([element]);
+      },
+    });
   }
 
   function getReplaceMenuPosition(element) {

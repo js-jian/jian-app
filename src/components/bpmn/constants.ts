@@ -1,3 +1,11 @@
+export enum PROPERTIES_PANEL_TAB_KEY {
+  BASIC = "BASIC"
+}
+
+export enum ELEMENT_TYPE {
+  Task = "bpmn:Task",
+}
+
 export const DIAGRAM_XML = `
 <?xml version="1.0" encoding="UTF-8"?>
   <bpmn2:definitions

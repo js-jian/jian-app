@@ -1,4 +1,4 @@
-import Bpmn from "./components/bpmn/Bpmn";
+import { Bpmn } from "./components/bpmn/Bpmn";
 import styles from "./App.module.less";
 
 function App() {

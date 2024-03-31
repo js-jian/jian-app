@@ -1,9 +1,17 @@
-.bpmnWrapper {
+.bpmnContainer {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
 
-  .canvas {
-    height: 100%;
-    width: 100%;
+  .bpmnWrapper {
+    display: flex;
+    flex: 1;
+
+    .canvas {
+      flex: 1;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
