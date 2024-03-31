@@ -8,7 +8,7 @@ import translate from 'diagram-js/lib/i18n/translate';
 
 import PaletteProvider from './PaletteProvider';
 
-export default {
+const palette = {
   __depends__: [
     PaletteModule,
     CreateModule,
@@ -21,3 +21,5 @@ export default {
   __init__: [ 'paletteProvider' ],
   paletteProvider: [ 'type', PaletteProvider ]
 };
+
+export default palette;

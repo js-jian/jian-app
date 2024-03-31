@@ -8,7 +8,7 @@ import PopupMenuModule from "bpmn-js/lib/features/popup-menu";
 
 import ContextPadProvider from './ContextPadProvider';
 
-export default {
+const contextPad = {
   __depends__: [
     AppendPreviewModule,
     DirectEditingModule,
@@ -21,3 +21,5 @@ export default {
   __init__: [ 'contextPadProvider' ],
   contextPadProvider: [ 'type', ContextPadProvider ]
 };
+
+export default contextPad;
