@@ -20,7 +20,7 @@ jobs:
       with:
         branch: gh-pages
         publish_dir: ./dist
-        github_token: ${{ secrets.CITEST }}
+        github_token: ${{ secrets.CI_TEST }}
         user_name: $${{ secrets.MY_USER_NAME }}
         user_email: ${{ secrets.MY_USER_EMAIL }}
         commit_message: 自动部署
