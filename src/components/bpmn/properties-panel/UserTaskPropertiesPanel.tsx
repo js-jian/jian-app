@@ -51,7 +51,7 @@ export function UserTaskPropertiesPanel(): React.ReactElement {
 
   return (
     <div className={styles.panel}>
-      <Tabs items={tabItems} tabPosition="left" />
+      {/* <Tabs items={tabItems} tabPosition="left" /> */}
     </div>
   )
 };

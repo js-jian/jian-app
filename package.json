@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.8.3",
-    "antd": "^5.15.3",
+    "antd": "4.12.3",
     "bpmn-js": "^17.2.1",
     "diagram-js-direct-editing": "^2.1.2",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -16,9 +17,11 @@
     "@testing-library/react": "^14.2.2",
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.12",
+    "@types/lodash": "^4.17.0",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.69",
     "@types/react-dom": "^18.2.22",
+    "babel-plugin-import": "^1.13.8",
     "customize-cra": "^1.0.0",
     "customize-cra-less-loader": "^2.0.0",
     "less": "^4.2.0",
